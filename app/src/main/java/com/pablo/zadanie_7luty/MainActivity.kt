@@ -33,8 +33,6 @@ class MainActivity : AppCompatActivity() {
         var picture_green = findViewById<ImageView>(R.id.imageView_green)
         var picture_blue = findViewById<ImageView>(R.id.imageView_blue)
 
-
-
         findViewById<Button>(R.id.btn_reset).setOnClickListener {
             seekBar_horizontal_red.setProgress(50)
             seekBar_horizontal_green.setProgress(50)
