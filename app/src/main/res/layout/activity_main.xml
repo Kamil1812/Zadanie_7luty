@@ -13,7 +13,7 @@
         android:text="RESET"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
@@ -29,55 +29,54 @@
         app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <SeekBar
         android:id="@+id/seekBar_horizontal_green"
         android:layout_width="143dp"
         android:layout_height="25dp"
         android:progress="50"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_blue"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_vertical_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_green"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_vertical_green"
+        app:layout_constraintVertical_bias="0.459" />
 
     <ImageView
         android:id="@+id/imageView_blue"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_horizontal_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_horizontal_green"
+        app:layout_constraintVertical_bias="0.771"
         app:srcCompat="@drawable/blue" />
 
     <ImageView
         android:id="@+id/imageView_red"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_horizontal_red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintVertical_bias="0.661"
         app:srcCompat="@drawable/red" />
 
     <ImageView
         android:id="@+id/imageView_green"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_horizontal_green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_horizontal_red"
+        app:layout_constraintVertical_bias="0.473"
         app:srcCompat="@drawable/green" />
 
     <SeekBar
@@ -91,7 +90,7 @@
         app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <ProgressBar
         android:id="@+id/progressBar_vertical"
@@ -110,24 +109,24 @@
         android:layout_width="143dp"
         android:layout_height="25dp"
         android:progress="50"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_blue"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_vertical_blue"
+        app:layout_constraintVertical_bias="0.461" />
 
     <SeekBar
         android:id="@+id/seekBar_horizontal_red"
         android:layout_width="143dp"
         android:layout_height="25dp"
         android:progress="50"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_green"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_vertical_green"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_red"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_vertical_red"
+        app:layout_constraintVertical_bias="0.459" />
 
     <SeekBar
         android:id="@+id/seekBar_vertical_blue"
@@ -140,7 +139,7 @@
         app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.813" />
 
     <ProgressBar
         android:id="@+id/progressBar_horizontal"
@@ -152,6 +151,6 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar_vertical_blue"
-        app:layout_constraintVertical_bias="0.719" />
+        app:layout_constraintVertical_bias="0.66" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
