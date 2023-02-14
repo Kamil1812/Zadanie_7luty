@@ -45,38 +45,41 @@
 
     <ImageView
         android:id="@+id/imageView_blue"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="center"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_horizontal_blue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar_horizontal_green"
-        app:layout_constraintVertical_bias="0.771"
+        app:layout_constraintVertical_bias="0.802"
         app:srcCompat="@drawable/blue" />
 
     <ImageView
         android:id="@+id/imageView_red"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="center"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_horizontal_red"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661"
+        app:layout_constraintVertical_bias="0.615"
         app:srcCompat="@drawable/red" />
 
     <ImageView
         android:id="@+id/imageView_green"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="center"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_horizontal_green"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar_horizontal_red"
-        app:layout_constraintVertical_bias="0.473"
+        app:layout_constraintVertical_bias="0.463"
         app:srcCompat="@drawable/green" />
 
     <SeekBar
